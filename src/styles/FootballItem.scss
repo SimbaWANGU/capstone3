@@ -1,0 +1,23 @@
+$fontColor : rgba(255, 255, 255, 1);
+
+.footballItem {
+  display: flex;
+  flex-direction: column;
+
+  .arrowGo {
+    margin: 5px 5px auto auto;
+    padding: 0 0 50px 0;
+  }
+
+  h4 {
+    margin: 30px 5px auto auto;
+    color: $fontColor;
+    font-weight: 500;
+  }
+
+  p {
+    margin: auto 5px 20px auto;
+    color: $fontColor;
+    font-weight: 400;
+  }
+}

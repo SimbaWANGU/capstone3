@@ -1,0 +1,22 @@
+$backgroundColorOdd : rgba(67, 105, 176, 1);
+$backgroundColorEven: rgba(62, 97, 163, 1);
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.grid > :nth-child(n) {
+  background-color: $backgroundColorEven;
+}
+
+.grid > :nth-child(4n) {
+  background-color: $backgroundColorOdd;
+}
+
+.grid > :nth-child(4n + 1) {
+  background-color: $backgroundColorOdd;
+}

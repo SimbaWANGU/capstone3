@@ -1,17 +1,36 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import '../styles/FootballItem.scss';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
-function FootballItems({ name, goalsScored }) {
+function FootballItems({ name, goalsScored, photo }) {
   const goals = `${goalsScored} Goals`;
+
+  const backgroundColor = '#5788e3b3';
+  const backgroundColorGradient = '#5788e380';
+
+  const backgroundImageStyle = {
+    backgroundImage: `linear-gradient(to left, ${backgroundColor}, ${backgroundColorGradient}), url(${photo})`,
+  };
+
   return (
-    <div className="footballItem">
-      <ArrowCircleRightOutlinedIcon style={{ fill: '#FAFAFA' }} className="arrowGo" />
-      <h4>{name}</h4>
-      <p>{goals}</p>
-    </div>
+    <>
+      <NavLink to="/details" className="link">
+        <div className="footballItem" style={backgroundImageStyle}>
+          <ArrowCircleRightOutlinedIcon style={{ fill: '#FAFAFA' }} className="arrowGo" />
+          <h4>{name}</h4>
+          <p>{goals}</p>
+        </div>
+      </NavLink>
+    </>
   );
 }
+
+FootballItems.propTypes = {
+  name: PropTypes.string.isRequired,
+  goalsScored: PropTypes.number.isRequired,
+  photo: PropTypes.string.isRequired,
+};
 
 export default FootballItems;

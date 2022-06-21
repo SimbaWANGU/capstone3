@@ -7,7 +7,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 function Header() {
   return (
     <div className="header">
-      <ArrowBackIosNewIcon style={{ fill: '#FAFAFA' }} />
+      <ArrowBackIosNewIcon className="back" style={{ fill: '#FAFAFA' }} />
       <p>2022</p>
       <h5>Competitions</h5>
       <KeyboardVoiceIcon style={{ fill: '#FAFAFA' }} />

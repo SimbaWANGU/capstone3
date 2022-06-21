@@ -3,6 +3,8 @@ $fontColor : rgba(255, 255, 255, 1);
 .footballItem {
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .arrowGo {
     margin: 5px 5px auto auto;
@@ -19,5 +21,15 @@ $fontColor : rgba(255, 255, 255, 1);
     margin: auto 5px 20px auto;
     color: $fontColor;
     font-weight: 400;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  .back {
+    display: none;
   }
 }

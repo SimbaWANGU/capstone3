@@ -12,10 +12,13 @@ const fetchFootball = async () => {
     resData.push({
       id: res.player.id,
       name: res.player.name,
+      team: res.statistics[0].team.name,
       totalShots: res.statistics[0].shots.total,
       shotsOnTarget: res.statistics[0].shots.on,
       goalsScored: res.statistics[0].goals.total,
-      appearances: res.statistics[0].games.appearances,
+      appearances: res.statistics[0].games.lineups,
+      minutesPlayed: res.statistics[0].games.minutes,
+      rating: res.statistics[0].games.rating,
       photo: res.player.photo,
 
     });

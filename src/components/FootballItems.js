@@ -3,15 +3,13 @@ import React from 'react';
 import '../styles/FootballItem.scss';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
-function FootballItems({ name, seasons }) {
-  const seasonsRecorded = `Seasons Recorded: ${seasons}`;
+function FootballItems({ name, goalsScored }) {
+  const goals = `${goalsScored} Goals`;
   return (
     <div className="footballItem">
       <ArrowCircleRightOutlinedIcon style={{ fill: '#FAFAFA' }} className="arrowGo" />
       <h4>{name}</h4>
-      <p>
-        {seasonsRecorded}
-      </p>
+      <p>{goals}</p>
     </div>
   );
 }

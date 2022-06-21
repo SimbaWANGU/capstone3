@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import fetchFootball from './api/fetchFootball';
 import './App.scss';
-import Header from './components/Header';
 import HomePage from './pages/HomePage';
+import Details from './pages/Details';
 import { getScorers } from './redux/topScorers/topScorers';
 
 function App() {
@@ -19,8 +20,12 @@ function App() {
 
   return (
     <>
-      <Header />
-      <HomePage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/details" element={<Details />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/HomePage.scss';
 import { useSelector } from 'react-redux';
+import Header from '../components/Header';
 import PageHeader from '../components/PageHeader';
 import FootballItems from '../components/FootballItems';
 
@@ -9,6 +10,7 @@ function HomePage() {
 
   return (
     <>
+      <Header />
       <PageHeader />
       <div className="grid">
         {scorers.map((scorer) => (

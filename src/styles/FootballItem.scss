@@ -23,3 +23,13 @@ $fontColor : rgba(255, 255, 255, 1);
     font-weight: 400;
   }
 }
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  .back {
+    display: none;
+  }
+}

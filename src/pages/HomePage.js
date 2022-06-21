@@ -17,6 +17,7 @@ function HomePage() {
             id={scorer.id}
             name={scorer.name}
             goalsScored={scorer.goalsScored}
+            photo={scorer.photo}
           />
         ))}
       </div>

@@ -1,21 +1,22 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import '../styles/HomePage.scss';
+import { useSelector } from 'react-redux';
 import PageHeader from '../components/PageHeader';
 import FootballItems from '../components/FootballItems';
 
-function HomePage({ data }) {
-  console.log(data);
+function HomePage() {
+  const scorers = useSelector((state) => state.topScorer);
+
   return (
     <>
       <PageHeader />
       <div className="grid">
-        {data.map((comp) => (
+        {scorers.map((scorer) => (
           <FootballItems
-            key={comp.league.id}
-            name={comp.league.name}
-            seasons={comp.seasons.length}
+            key={scorer.id}
+            id={scorer.id}
+            name={scorer.name}
+            goalsScored={scorer.goalsScored}
           />
         ))}
       </div>

@@ -1,27 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import fetchFootball from './api/fetchFootball';
 import './App.scss';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
+import { getScorers } from './redux/topScorers/topScorers';
 
 function App() {
-  const [competitions, setCompetitions] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    async function footballData() {
-      const data = await fetchFootball();
-      setCompetitions(data);
-      return data;
+    async function data() {
+      const scorers = await fetchFootball();
+      dispatch(getScorers(scorers));
     }
-    footballData();
+    data();
   }, []);
-
-  const data = competitions.slice(1, 10);
 
   return (
     <>
       <Header />
-      <HomePage data={data} />
+      <HomePage />
     </>
   );
 }

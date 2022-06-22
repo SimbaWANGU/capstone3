@@ -1,3 +1,7 @@
+$backgroundColor : rgba(87, 136, 227, 0.9);
+$backgroundColorGradient : rgba(87, 136, 227, 0.2);
+
 .details {
-  display: none;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, $backgroundColor, $backgroundColorGradient);
 }

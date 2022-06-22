@@ -15,7 +15,7 @@ function HomePage() {
       <PageHeader />
       <div className="grid">
         {scorers.map((scorer) => (
-          <NavLink key={scorer.id} to={`/details/scorer/${scorer.id}`}>
+          <NavLink className="link" key={scorer.id} to={`/details/scorer/${scorer.id}`}>
             <FootballItems
               id={scorer.id}
               name={scorer.name}

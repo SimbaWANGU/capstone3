@@ -20,9 +20,3 @@ $backgroundColorEven: rgba(62, 97, 163, 1);
 .grid > :nth-child(4n + 1) {
   background-color: $backgroundColorOdd;
 }
-
-.header {
-  .back {
-    display: none;
-  }
-}

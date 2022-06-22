@@ -1,0 +1,31 @@
+$fontColor : rgba(2, 2, 200, 0.9);
+
+.detailsBody {
+  display: flex;
+  margin: 10px auto auto auto;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  ul {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      margin: 10px auto;
+      color: $fontColor;
+      font-size: 18px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}

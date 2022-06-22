@@ -23,7 +23,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/details" element={<Details />} />
+          <Route path="/details/scorer/:id" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </>

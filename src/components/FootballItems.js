@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
 import '../styles/FootballItem.scss';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
@@ -16,13 +15,11 @@ function FootballItems({ name, goalsScored, photo }) {
 
   return (
     <>
-      <NavLink to="/details" className="link">
-        <div className="footballItem" style={backgroundImageStyle}>
-          <ArrowCircleRightOutlinedIcon style={{ fill: '#FAFAFA' }} className="arrowGo" />
-          <h4>{name}</h4>
-          <p>{goals}</p>
-        </div>
-      </NavLink>
+      <div className="footballItem" style={backgroundImageStyle}>
+        <ArrowCircleRightOutlinedIcon style={{ fill: '#FAFAFA' }} className="arrowGo" />
+        <h4>{name}</h4>
+        <p>{goals}</p>
+      </div>
     </>
   );
 }

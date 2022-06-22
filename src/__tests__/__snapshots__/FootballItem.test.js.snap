@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page body section tests Component renders as expected 1`] = `
+<div
+  className="footballItem"
+  data-testid="footballItemDisplay"
+  style={
+    Object {
+      "backgroundImage": "linear-gradient(to left, #5788e3b3, #5788e380), url(https://photo.example.com)",
+    }
+  }
+>
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium arrowGo css-i4bv87-MuiSvgIcon-root"
+    data-testid="ArrowCircleRightOutlinedIcon"
+    focusable="false"
+    style={
+      Object {
+        "fill": "#FAFAFA",
+      }
+    }
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10zM4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm12 0-4 4-1.41-1.41L12.17 13H8v-2h4.17l-1.59-1.59L12 8l4 4z"
+    />
+  </svg>
+  <h4>
+    Example
+  </h4>
+  <p>
+    5 Goals
+  </p>
+</div>
+`;

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/DetailsBody.scss';
@@ -11,7 +10,7 @@ function DetailsBody({
   totalShots,
   shotsOnTarget,
 }) {
-  const averageRating = `Average Rating: ${rating}`;
+  const averageRating = `Average Rating: ${Math.round(rating * 100) / 100}`;
   const totalAppearances = `Total Appearances: ${appearances}`;
   const goals = `Goals: ${goalsScored}`;
   const minutes = `Minutes: ${minutesPlayed}`;
@@ -20,7 +19,7 @@ function DetailsBody({
   const shotsOff = `Shots Off: ${totalShots - shotsOnTarget}`;
 
   return (
-    <div className="detailsBody">
+    <div className="detailsBody" data-testid="detailsBodyDisplay">
       <ul>
         <li>
           <p>{averageRating}</p>

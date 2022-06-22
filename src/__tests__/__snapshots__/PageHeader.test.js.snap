@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page header section tests Component renders as expected 1`] = `
+<div
+  className="pageHeader"
+  data-testid="pageHeaderDisplay"
+>
+  <h1>
+    Premier League
+  </h1>
+  <p>
+    Top Scorers 2021/22
+  </p>
+</div>
+`;

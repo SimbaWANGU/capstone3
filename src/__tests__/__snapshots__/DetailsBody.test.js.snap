@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details page body section tests Component renders as expected 1`] = `
+<div
+  className="detailsBody"
+  data-testid="detailsBodyDisplay"
+>
+  <ul>
+    <li>
+      <p>
+        Average Rating: 6
+      </p>
+    </li>
+    <li>
+      <p>
+        Total Appearances: 10
+      </p>
+    </li>
+    <li>
+      <p>
+        Goals: 1
+      </p>
+    </li>
+    <li>
+      <p>
+        Minutes: 1000
+      </p>
+    </li>
+    <li>
+      <p>
+        Shots: 10
+      </p>
+    </li>
+    <li>
+      <p>
+        Shots On: 4
+      </p>
+    </li>
+    <li>
+      <p>
+        Shots Off: 6
+      </p>
+    </li>
+  </ul>
+</div>
+`;

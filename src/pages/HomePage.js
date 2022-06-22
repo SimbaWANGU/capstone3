@@ -11,7 +11,7 @@ function HomePage() {
 
   return (
     <>
-      <Header />
+      <Header title="Top Scorers" />
       <PageHeader />
       <div className="grid">
         {scorers.map((scorer) => (

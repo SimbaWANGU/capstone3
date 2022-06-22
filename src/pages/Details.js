@@ -19,7 +19,7 @@ function Details() {
 
   return (
     <div className="details">
-      <Header />
+      <Header title={scorerData.name} />
       <DetailsHeader
         name={scorerData.name}
         photo={scorerData.photo}

@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/DetailsHeader.scss';
 
 function DetailsHeader({ name, photo, team }) {
@@ -11,5 +11,11 @@ function DetailsHeader({ name, photo, team }) {
     </div>
   );
 }
+
+DetailsHeader.propTypes = {
+  name: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
+  team: PropTypes.string.isRequired,
+};
 
 export default DetailsHeader;

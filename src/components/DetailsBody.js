@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/DetailsBody.scss';
 
 function DetailsBody({
@@ -46,5 +47,14 @@ function DetailsBody({
     </div>
   );
 }
+
+DetailsBody.propTypes = {
+  rating: PropTypes.number.isRequired,
+  appearances: PropTypes.number.isRequired,
+  goalsScored: PropTypes.number.isRequired,
+  minutesPlayed: PropTypes.number.isRequired,
+  totalShots: PropTypes.number.isRequired,
+  shotsOnTarget: PropTypes.number.isRequired,
+};
 
 export default DetailsBody;

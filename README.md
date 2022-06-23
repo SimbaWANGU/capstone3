@@ -21,6 +21,10 @@ An API that provides numeric data about a topic was selected and a web app was b
 
 You can check the live demo [here](https://www.loom.com/share/b3f0ee2783444683b561b282874f98fa)
 
+## Deployment
+
+You can find the live link [here](https://foot-y.herokuapp.com/)
+
 ### Prerequisites
 
 - Have completed all the previous learning of modules.

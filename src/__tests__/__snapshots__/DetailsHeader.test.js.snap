@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details page header section tests Component renders as expected 1`] = `
+<div
+  className="detailsHeader"
+  data-testid="detailsHeaderDisplay"
+>
+  <img
+    alt="Scorer"
+    src="https://photo.example.com"
+  />
+  <h1>
+    Example
+  </h1>
+  <p>
+    Example FC
+  </p>
+</div>
+`;

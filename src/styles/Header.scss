@@ -1,0 +1,27 @@
+$headerColor : rgba(67, 105, 178, 1);
+$fontColor : rgba(255, 255, 255, 0.8);
+
+.header {
+  background-color: $headerColor;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  .back {
+    margin: auto 0;
+  }
+
+  p {
+    margin: auto auto auto 0;
+    font-size: 18px;
+    color: $fontColor;
+    font-weight: 500;
+  }
+
+  h5 {
+    margin: auto auto auto 0;
+    font-size: 18px;
+    color: $fontColor;
+    font-weight: 700;
+  }
+}

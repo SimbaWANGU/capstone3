@@ -1,0 +1,25 @@
+$fontColor : rgba(255, 255, 255, 1);
+$backgroundColor : rgba(87, 136, 227, 0.7);
+$backgroundColorGradient: rgba(87, 136, 227, 0.5);
+
+.pageHeader {
+  background-image: linear-gradient(to left, $backgroundColor, $backgroundColorGradient), url('https://st.depositphotos.com/1004061/4227/i/450/depositphotos_42274531-stock-photo-a-player-shooting-on-goal.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin: auto 10vw 0 auto;
+    color: $fontColor;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0 27vw auto auto;
+    color: $fontColor;
+    font-weight: 500;
+  }
+}

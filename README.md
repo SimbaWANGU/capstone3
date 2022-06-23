@@ -19,7 +19,7 @@ An API that provides numeric data about a topic was selected and a web app was b
 
 ## Live Demo
 
-You can check the live demo [here](https://www.loom.com/share/b3f0ee2783444683b561b282874f98fa)
+You can check the live demo [here](https://www.loom.com/share/3b797b63e32848799b26ef336967a987)
 
 ## Deployment
 
@@ -59,6 +59,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/)
+- [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- [Football API](https://.api-football.com/)
 
 ## 📝 License
 

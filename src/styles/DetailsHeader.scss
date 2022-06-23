@@ -7,10 +7,11 @@ $fontColor : rgba(255, 255, 255, 1);
   img {
     padding: 10px;
     margin: 10px auto auto auto;
-    height: 20vh;
-    width: 50vw;
+    height: 15vh;
+    width: 30vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 50%;
+    object-fit: cover;
   }
 
   h1 {

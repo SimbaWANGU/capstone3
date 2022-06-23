@@ -15,7 +15,7 @@ function FootballItems({ name, goalsScored, photo }) {
 
   return (
     <>
-      <div className="footballItem" style={backgroundImageStyle}>
+      <div className="footballItem" style={backgroundImageStyle} data-testid="footballItemDisplay">
         <ArrowCircleRightOutlinedIcon style={{ fill: '#FAFAFA' }} className="arrowGo" />
         <h4>{name}</h4>
         <p>{goals}</p>
